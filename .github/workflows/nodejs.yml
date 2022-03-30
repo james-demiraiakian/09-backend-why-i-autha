@@ -18,7 +18,7 @@ jobs:
         env:
           CI: true
           DATABASE_URL: postgres://alchemy:alchemy@postgres:5432/alchemy
-          JWT_SECRET: ${{JWT_SECRET}}
-          CLIENT_ID: ${{CLIENT_ID}}
-          CLIENT_SECRET: ${{CLIENT_SECRET}}
-          REDIRECT_URI: ${{REDIRECT_URI}}
+          JWT_SECRET: ${{ secrets.JWT_SECRET }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+          REDIRECT_URI: ${{ secrets.REDIRECT_URI }}
